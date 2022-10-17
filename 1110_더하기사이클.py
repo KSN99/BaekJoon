@@ -1,15 +1,16 @@
-N= int(input())
-num=N
-i=0
-
-while True:
-    a= num//10 
-    b= num%10
-    c= (a+b) %10
-    num=(b*10)+c
+N = input()
+ 
+if(int(N) < 10):
+    N = '0' + N
     
-    i+=1
-    if(num==N):
+check_value = int(N)
+cnt = 0
+while True:
+    add_value = int(N[0]) + int(N[1])
+    cnt += 1
+    
+    N = N[-1] + str(add_value)[-1]
+    if(check_value == int(N)):
         break
-
-print(i)
+        
+print(cnt)

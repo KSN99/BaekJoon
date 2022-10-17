@@ -1,3 +1,11 @@
 N=8
 
-N='0'+N
+value=N
+
+print(value)
+print(N)
+
+N=N+100
+
+print(value)
+print(N)
