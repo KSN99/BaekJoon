@@ -1,2 +1,2 @@
 # BaekJoon
-Algorithm / Coding test
+# Algorithm/Coding test

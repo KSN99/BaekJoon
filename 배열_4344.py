@@ -1,11 +1,12 @@
-c=int(input())
+C=int(input())
 
-for _ in range(c):
-    score=list(map(int,input().split()))        
-    avg=sum(score[1:])/score[0]
-    u=0
-    for i in score[1:]:
-        if i>avg:
-            u+=1
-    per=u/score[0] * 100
-    print(f'{per:.3f}%')
+for i in range(C):
+    scores=list(map(int,input().split()))
+    avg=sum(scores[1:])/scores[0]
+    avg_student=[]
+    for i in range(1,scores[0]+1):
+        if scores[i]>avg:
+            avg_student.append(scores[i]) # [80 100 ]
+    new_avg=len(avg_student)/scores[0] * 100 
+    print(f'{new_avg:.3f}%')
+        
