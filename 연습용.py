@@ -1,6 +1,8 @@
-T=int(input())
+nums=[]
+for i in range(28):
+    n=int(input())
+    nums.append(n)
 
-for i in range(T):
-    r,s=input().split()
-    for k in s:
-        print(k*int(r),end='')
+for k in range(1,31):
+    if k not in nums:
+        print(k)
