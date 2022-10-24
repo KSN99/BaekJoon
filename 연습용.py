@@ -1,9 +1,6 @@
-dial=['ABC','DEF','GHI','JKL','MNO','PQRS','TUV','WXYZ']
-word=input()
-cnt=0
-for i in dial:
-    for k in word:
-        if k in i:
-            c=dial.index(i)+3
-            cnt+=c
-print(cnt)
+T=int(input())
+
+for i in range(T):
+    r,s=input().split()
+    for k in s:
+        print(k*int(r),end='')
