@@ -1,0 +1,16 @@
+import random
+N,M=map(int,input().split())
+card=list(map(int,input().split()))
+sum_card=[]
+compare_card=[]
+while True:
+    for i in range(3):
+        random_num=random.choice(card)
+        sum_card.append(random_num)
+    if sum(sum_card)<=M:
+        compare_card.append(sum_card)
+    else:
+        pass
+print(max(
+    compare_card))
+
