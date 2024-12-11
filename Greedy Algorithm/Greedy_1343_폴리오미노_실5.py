@@ -34,4 +34,3 @@ else:
     str = '.'.join(new_board)
     print(str)
 
-
