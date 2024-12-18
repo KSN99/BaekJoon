@@ -1,5 +1,4 @@
-word = ['eat', 'tea', 'tan','ate','nat','bat']
-
-anagrams=[''.join(sorted(word))].append(word)
-
-print(anagrams)
+str = "push 123"
+num=str.split()
+print(int(num[1]))
+print()
