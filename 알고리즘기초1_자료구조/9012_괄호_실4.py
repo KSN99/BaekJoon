@@ -11,15 +11,17 @@ T = int(input())
 for i in range(T):
     VPS = input()
     stack = []
-    for char in VPS:
-        if char == '(':
-            stack.append(char)
-        elif char == ')':
-            if len(stack) > 0:
+    #stack 길이가 0이 된다면 VPS
+    for j in VPS:
+        if j == '(':
+            stack.append(j)
+        elif j == ')':
+            if len(stack) >= 1:
                 stack.pop()
-            else: stack.append(')')
-
-    if len(stack) == 0:
-        print("YES")
+            else:
+                print("NO")
+                break
     else:
-        print("NO")
+        if len(stack) == 0:
+            print("YES")
+        else: print("NO")
