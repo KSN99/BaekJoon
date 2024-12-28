@@ -41,3 +41,5 @@ for i in range(n):
 if flag == 0:
     for i in answer:
         print(i)
+
+#다시 풀기
